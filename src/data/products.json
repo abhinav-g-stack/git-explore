@@ -1,0 +1,533 @@
+[
+  {
+    "id": "prod_001",
+    "name": "Wireless Mouse",
+    "description": "Ergonomic wireless mouse with long battery life.",
+    "price": 25.99,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 49
+  },
+  {
+    "id": "prod_002",
+    "name": "Mechanical Keyboard",
+    "description": "Full-size mechanical keyboard with clicky switches.",
+    "price": 79.99,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 22
+  },
+  {
+    "id": "prod_003",
+    "name": "27-inch IPS Monitor",
+    "description": "High-resolution monitor with vibrant colors.",
+    "price": 299.99,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 20
+  },
+  {
+    "id": "prod_004",
+    "name": "Noise-Cancelling Headphones",
+    "description": "Over-ear headphones with excellent noise cancellation.",
+    "price": 199.5,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 40
+  },
+  {
+    "id": "prod_005",
+    "name": "Smart Speaker",
+    "description": "Voice-controlled smart speaker with integrated assistant.",
+    "price": 89,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 60
+  },
+  {
+    "id": "prod_006",
+    "name": "External SSD 1TB",
+    "description": "Fast and portable solid-state drive.",
+    "price": 120,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 35
+  },
+  {
+    "id": "prod_007",
+    "name": "Webcam 1080p",
+    "description": "High-definition webcam for video calls.",
+    "price": 45.99,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 55
+  },
+  {
+    "id": "prod_008",
+    "name": "Router Wi-Fi 6",
+    "description": "Next-generation router for faster internet speeds.",
+    "price": 150,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 25
+  },
+  {
+    "id": "prod_009",
+    "name": "Gaming Laptop",
+    "description": "Powerful laptop for gaming and productivity.",
+    "price": 1200,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 15
+  },
+  {
+    "id": "prod_010",
+    "name": "E-reader",
+    "description": "Lightweight e-reader with glare-free display.",
+    "price": 99,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 40
+  },
+  {
+    "id": "prod_011",
+    "name": "Fitness Tracker",
+    "description": "Track your daily activity and workouts.",
+    "price": 60,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 70
+  },
+  {
+    "id": "prod_012",
+    "name": "Portable Projector",
+    "description": "Compact projector for movies and presentations.",
+    "price": 250,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 20
+  },
+  {
+    "id": "prod_013",
+    "name": "Smart Watch",
+    "description": "Stay connected with a smartwatch on your wrist.",
+    "price": 150,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 45
+  },
+  {
+    "id": "prod_014",
+    "name": "Streaming Stick 4K",
+    "description": "Stream your favorite content in stunning 4K.",
+    "price": 50,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 80
+  },
+  {
+    "id": "prod_015",
+    "name": "Security Camera",
+    "description": "Keep an eye on your home with a smart security camera.",
+    "price": 75,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 30
+  },
+  {
+    "id": "prod_016",
+    "name": "Drone with Camera",
+    "description": "Capture aerial footage with this easy-to-fly drone.",
+    "price": 350,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 18
+  },
+  {
+    "id": "prod_017",
+    "name": "Portable Charger 20000mAh",
+    "description": "Keep your devices charged on the go.",
+    "price": 30,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 100
+  },
+  {
+    "id": "prod_018",
+    "name": "Bluetooth Speaker",
+    "description": "Compact and powerful Bluetooth speaker.",
+    "price": 40,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 75
+  },
+  {
+    "id": "prod_019",
+    "name": "Smart Thermostat",
+    "description": "Control your home's temperature remotely.",
+    "price": 100,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 25
+  },
+  {
+    "id": "prod_020",
+    "name": "Robot Vacuum Cleaner",
+    "description": "Automate your cleaning with a smart robot vacuum.",
+    "price": 250,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Electronics",
+    "stock": 15
+  },
+  {
+    "id": "prod_021",
+    "name": "Men's T-Shirt",
+    "description": "Comfortable cotton t-shirt for everyday wear.",
+    "price": 19.99,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 100
+  },
+  {
+    "id": "prod_022",
+    "name": "Women's Jeans",
+    "description": "Stylish and durable denim jeans.",
+    "price": 45,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 80
+  },
+  {
+    "id": "prod_023",
+    "name": "Hoodie",
+    "description": "Warm and cozy hoodie for cooler weather.",
+    "price": 35.5,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 60
+  },
+  {
+    "id": "prod_024",
+    "name": "Sneakers",
+    "description": "Comfortable and fashionable sneakers.",
+    "price": 70,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 50
+  },
+  {
+    "id": "prod_025",
+    "name": "Summer Dress",
+    "description": "Light and airy dress perfect for summer.",
+    "price": 55,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 40
+  },
+  {
+    "id": "prod_027",
+    "name": "Winter Coat",
+    "description": "Warm and insulated coat for cold climates.",
+    "price": 150,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 25
+  },
+  {
+    "id": "prod_028",
+    "name": "Swimsuit",
+    "description": "Stylish and comfortable swimsuit.",
+    "price": 30,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 70
+  },
+  {
+    "id": "prod_029",
+    "name": "Socks (Pack of 5)",
+    "description": "Soft and breathable cotton socks.",
+    "price": 10,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 200
+  },
+  {
+    "id": "prod_030",
+    "name": "Scarf",
+    "description": "Fashionable scarf to complement your outfit.",
+    "price": 25,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 90
+  },
+  {
+    "id": "prod_031",
+    "name": "Running Shoes",
+    "description": "Lightweight and supportive shoes for running.",
+    "price": 90,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 45
+  },
+  {
+    "id": "prod_032",
+    "name": "Dress Shirt",
+    "description": "Formal dress shirt for special occasions.",
+    "price": 40,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 55
+  },
+  {
+    "id": "prod_033",
+    "name": "Leggings",
+    "description": "Comfortable and flexible leggings for workouts or casual wear.",
+    "price": 20,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 110
+  },
+  {
+    "id": "prod_034",
+    "name": "Jacket",
+    "description": "Versatile jacket for various weather conditions.",
+    "price": 60,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 35
+  },
+  {
+    "id": "prod_035",
+    "name": "Belt",
+    "description": "Classic leather belt with a sturdy buckle.",
+    "price": 20,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 85
+  },
+  {
+    "id": "prod_036",
+    "name": "Sweater",
+    "description": "Warm and stylish sweater for cooler days.",
+    "price": 45,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 65
+  },
+  {
+    "id": "prod_037",
+    "name": "Polo Shirt",
+    "description": "Classic polo shirt for a smart casual look.",
+    "price": 30,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 70
+  },
+  {
+    "id": "prod_038",
+    "name": "Yoga Pants",
+    "description": "Comfortable and flexible pants for yoga or lounging.",
+    "price": 25,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 95
+  },
+  {
+    "id": "prod_039",
+    "name": "Rain Jacket",
+    "description": "Waterproof jacket to stay dry in the rain.",
+    "price": 50,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 40
+  },
+  {
+    "id": "prod_040",
+    "name": "Gloves",
+    "description": "Warm gloves for cold weather.",
+    "price": 15,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Apparel",
+    "stock": 150
+  },
+  {
+    "id": "prod_041",
+    "name": "Sofa",
+    "description": "Comfortable three-seater sofa for your living room.",
+    "price": 500,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 10
+  },
+  {
+    "id": "prod_042",
+    "name": "Coffee Table",
+    "description": "Stylish coffee table with storage.",
+    "price": 150,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 20
+  },
+  {
+    "id": "prod_043",
+    "name": "Bed Frame (Queen)",
+    "description": "Sturdy queen-size bed frame.",
+    "price": 300,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 15
+  },
+  {
+    "id": "prod_044",
+    "name": "Desk Lamp",
+    "description": "Adjustable desk lamp for reading or working.",
+    "price": 30,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 40
+  },
+  {
+    "id": "prod_045",
+    "name": "Area Rug",
+    "description": "Soft area rug to add warmth to your room.",
+    "price": 75,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 25
+  },
+  {
+    "id": "prod_046",
+    "name": "Dining Table Set",
+    "description": "Dining table with four chairs.",
+    "price": 400,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 12
+  },
+  {
+    "id": "prod_047",
+    "name": "Bookcase",
+    "description": "Shelving unit for books and decorations.",
+    "price": 100,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 30
+  },
+  {
+    "id": "prod_048",
+    "name": "Curtains (Pair)",
+    "description": "Light-blocking curtains for your windows.",
+    "price": 50,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 50
+  },
+  {
+    "id": "prod_049",
+    "name": "Throw Pillow",
+    "description": "Decorative throw pillow to enhance your decor.",
+    "price": 20,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 80
+  },
+  {
+    "id": "prod_050",
+    "name": "Bedding Set (Queen)",
+    "description": "Complete bedding set for a queen-size bed.",
+    "price": 80,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 35
+  },
+  {
+    "id": "prod_051",
+    "name": "KitchenAid Mixer",
+    "description": "Powerful stand mixer for all your baking needs.",
+    "price": 300,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 15
+  },
+  {
+    "id": "prod_052",
+    "name": "Blender",
+    "description": "High-speed blender for smoothies and more.",
+    "price": 70,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 40
+  },
+  {
+    "id": "prod_053",
+    "name": "Toaster Oven",
+    "description": "Compact toaster oven for small meals.",
+    "price": 50,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 30
+  },
+  {
+    "id": "prod_054",
+    "name": "Coffee Maker",
+    "description": "Programmable coffee maker for your morning brew.",
+    "price": 40,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 50
+  },
+  {
+    "id": "prod_055",
+    "name": "Cookware Set (10-piece)",
+    "description": "Non-stick cookware set for your kitchen.",
+    "price": 120,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 20
+  },
+  {
+    "id": "prod_056",
+    "name": "Dinnerware Set (4 settings)",
+    "description": "Elegant dinnerware set for four people.",
+    "price": 60,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 25
+  },
+  {
+    "id": "prod_057",
+    "name": "Vacuum Cleaner",
+    "description": "Powerful vacuum cleaner for keeping your floors clean.",
+    "price": 150,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 18
+  },
+  {
+    "id": "prod_058",
+    "name": "Standing Fan",
+    "description": "Adjustable standing fan for cooling your room.",
+    "price": 35,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 45
+  },
+  {
+    "id": "prod_059",
+    "name": "Air Purifier",
+    "description": "Improve air quality in your home with an air purifier.",
+    "price": 90,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 22
+  },
+  {
+    "id": "prod_060",
+    "name": "Trash Can (Kitchen)",
+    "description": "Large kitchen trash can with a foot pedal.",
+    "price": 40,
+    "imageUrl": "https://placehold.co/600x400.png",
+    "category": "Home Goods",
+    "stock": 30
+  }
+]
