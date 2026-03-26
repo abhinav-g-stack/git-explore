@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { AddToCartButton } from "@/components/add-to-cart-button";
 import { WishlistButton } from "@/components/wishlist-button";
+import { getProductImageUrl } from "@/lib/placeholder";
 
 export default async function ProductDetailPage({
   params,
@@ -22,16 +23,10 @@ export default async function ProductDetailPage({
       <div className="grid md:grid-cols-2 gap-12 items-start">
         <div className="aspect-square relative rounded-lg overflow-hidden shadow-lg">
           <Image
-            src={
-              product.imageUrl.startsWith("http") ||
-              product.imageUrl.startsWith("data:image")
-                ? product.imageUrl
-                : `https://placehold.co/600x400.png`
-            }
+            src={getProductImageUrl(product.imageUrl, product.name)}
             alt={product.name}
             fill
             className="object-cover"
-            data-ai-hint={`${product.category.toLowerCase().split(" ")[0]} ${product.name.toLowerCase().split(" ")[0]}`}
           />
         </div>
 

@@ -1,6 +1,7 @@
-import Image from 'next/image';
-import { LoginForm } from '@/components/login-form';
-import Link from 'next/link';
+import Image from "next/image";
+import { LoginForm } from "@/components/login-form";
+import Link from "next/link";
+import { getBackgroundUrl } from "@/lib/placeholder";
 
 export default function AdminLoginPage() {
   return (
@@ -15,7 +16,7 @@ export default function AdminLoginPage() {
           </div>
           <LoginForm isAdminLogin={true} />
           <div className="mt-4 text-center text-sm">
-            Not an admin?{' '}
+            Not an admin?{" "}
             <Link href="/login" className="underline">
               Go to user login
             </Link>
@@ -24,12 +25,11 @@ export default function AdminLoginPage() {
       </div>
       <div className="relative hidden h-full flex-col bg-muted p-10 text-white dark:border-l lg:flex">
         <div className="absolute inset-0 bg-zinc-900" />
-        <Image 
-          src="https://placehold.co/1200x1600.png"
+        <Image
+          src={getBackgroundUrl("ecomwave-admin")}
           alt="Data analytics dashboard"
           fill
           className="object-cover opacity-30"
-          data-ai-hint="business analytics"
         />
         <div className="relative z-20 flex items-center text-lg font-medium">
           <Link href="/" className="flex items-center gap-2">
@@ -51,7 +51,8 @@ export default function AdminLoginPage() {
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <p className="text-lg">
-              &ldquo;This dashboard provides the insights we need to drive our business forward and stay ahead of the curve.&rdquo;
+              &ldquo;This dashboard provides the insights we need to drive our
+              business forward and stay ahead of the curve.&rdquo;
             </p>
             <footer className="text-sm">Marketing Director</footer>
           </blockquote>

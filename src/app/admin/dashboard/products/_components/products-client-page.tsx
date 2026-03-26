@@ -10,13 +10,27 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MoreHorizontal } from "lucide-react";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { useToast } from "@/hooks/use-toast";
 import { deleteProduct } from "@/lib/actions/product-actions";
 import { ProductFormDialog } from "./product-form-dialog";
+import { getProductImageUrl } from "@/lib/placeholder";
 
 export function ProductsClientPage({ products }: { products: Product[] }) {
   const { toast } = useToast();
@@ -48,7 +62,9 @@ export function ProductsClientPage({ products }: { products: Product[] }) {
       <Card>
         <CardHeader>
           <CardTitle>All Products</CardTitle>
-          <CardDescription>View, edit, and manage all products.</CardDescription>
+          <CardDescription>
+            View, edit, and manage all products.
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <Table>
@@ -73,9 +89,8 @@ export function ProductsClientPage({ products }: { products: Product[] }) {
                       alt={product.name}
                       className="aspect-square rounded-md object-cover"
                       height="64"
-                      src={product.imageUrl.startsWith('http') || product.imageUrl.startsWith('/') || product.imageUrl.startsWith('data:image') ? product.imageUrl : `https://placehold.co/64x64.png`}
+                      src={getProductImageUrl(product.imageUrl, product.name)}
                       width="64"
-                      data-ai-hint={`${product.category.toLowerCase().split(' ')[0]} ${product.name.toLowerCase().split(' ')[0]}`}
                     />
                   </TableCell>
                   <TableCell className="font-medium">{product.name}</TableCell>
@@ -97,12 +112,17 @@ export function ProductsClientPage({ products }: { products: Product[] }) {
                         <DropdownMenuLabel>Actions</DropdownMenuLabel>
                         <ProductFormDialog product={product} mode="edit">
                           {/* This onSelect is needed to prevent the dropdown from closing */}
-                          <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
+                          <DropdownMenuItem
+                            onSelect={(e) => e.preventDefault()}
+                          >
                             Edit
                           </DropdownMenuItem>
                         </ProductFormDialog>
                         <DropdownMenuSeparator />
-                        <DropdownMenuItem onClick={() => handleDeleteProduct(product.id)} className="text-destructive focus:text-destructive focus:bg-destructive/10">
+                        <DropdownMenuItem
+                          onClick={() => handleDeleteProduct(product.id)}
+                          className="text-destructive focus:text-destructive focus:bg-destructive/10"
+                        >
                           Delete
                         </DropdownMenuItem>
                       </DropdownMenuContent>

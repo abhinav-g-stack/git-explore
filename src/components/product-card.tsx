@@ -18,6 +18,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { addToCart } from "@/lib/actions/cart-actions";
 import { WishlistButton } from "./wishlist-button";
+import { getProductImageUrl } from "@/lib/placeholder";
 
 interface ProductCardProps {
   product: Product;
@@ -61,16 +62,10 @@ export function ProductCard({ product }: ProductCardProps) {
           className="block aspect-square relative overflow-hidden"
         >
           <Image
-            src={
-              product.imageUrl.startsWith("http") ||
-              product.imageUrl.startsWith("data:image")
-                ? product.imageUrl
-                : `https://placehold.co/400x400.png`
-            }
+            src={getProductImageUrl(product.imageUrl, product.name)}
             alt={product.name}
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
-            data-ai-hint={`${product.category.toLowerCase().split(" ")[0]} ${product.name.toLowerCase().split(" ")[0]}`}
           />
         </Link>
       </CardHeader>
