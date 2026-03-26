@@ -1,18 +1,18 @@
-import Image from 'next/image';
-import { LoginForm } from '@/components/login-form';
-import Link from 'next/link';
+import Image from "next/image";
+import { LoginForm } from "@/components/login-form";
+import Link from "next/link";
+import { getBackgroundUrl } from "@/lib/placeholder";
 
 export default function LoginPage() {
   return (
     <div className="w-full min-h-screen lg:grid lg:grid-cols-2">
       <div className="relative hidden h-full flex-col bg-muted p-10 text-white dark:border-r lg:flex">
         <div className="absolute inset-0 bg-zinc-900" />
-        <Image 
-          src="https://placehold.co/1200x1600.png"
+        <Image
+          src={getBackgroundUrl("ecomwave-login")}
           alt="A stylish person shopping"
           fill
           className="object-cover opacity-30"
-          data-ai-hint="fashion e-commerce"
         />
         <div className="relative z-20 flex items-center text-lg font-medium">
           <Link href="/" className="flex items-center gap-2">
@@ -34,7 +34,8 @@ export default function LoginPage() {
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <p className="text-lg">
-              &ldquo;This platform has the best styles I've seen. The quality and service are unparalleled.&rdquo;
+              &ldquo;This platform has the best styles I've seen. The quality
+              and service are unparalleled.&rdquo;
             </p>
             <footer className="text-sm">Satisfied Customer</footer>
           </blockquote>
@@ -50,7 +51,7 @@ export default function LoginPage() {
           </div>
           <LoginForm />
           <div className="mt-4 text-center text-sm">
-            Don&apos;t have an account?{' '}
+            Don&apos;t have an account?{" "}
             <Link href="#" className="underline">
               Sign up
             </Link>
