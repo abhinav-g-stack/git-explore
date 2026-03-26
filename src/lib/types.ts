@@ -15,14 +15,14 @@ export interface Category {
 }
 
 export interface User {
-  id:string;
+  id: string;
   email: string;
   name: string;
-  role: 'user' | 'admin';
+  role: "user" | "admin";
 }
 
 export type Admin = User & {
-  role: 'admin';
+  role: "admin";
 };
 
 export interface CartItem {
@@ -46,6 +46,15 @@ export interface OrderItem {
   price: number; // Price at time of purchase
 }
 
+export interface WishlistItem {
+  productId: string;
+  name: string;
+  price: number;
+  imageUrl: string;
+  category: string;
+  addedAt: string; // ISO 8601 string
+}
+
 export interface Order {
   id: string;
   userId: string;
@@ -54,5 +63,5 @@ export interface Order {
   items: OrderItem[];
   total: number;
   date: string; // ISO 8601 string
-  status: 'Pending' | 'Shipped' | 'Delivered' | 'Cancelled';
+  status: "Pending" | "Shipped" | "Delivered" | "Cancelled";
 }
