@@ -6,7 +6,7 @@ import type { WishlistItem } from "@/lib/types";
 import { getProduct } from "./product-actions";
 import { revalidatePath } from "next/cache";
 
-const wishlistsFilePath = path.join(process.cwd(), "src/data/wishlists.json");
+const wishlistsFilePath = path.join(process.cwd(), "data/wishlists.json");
 
 async function readWishlists(): Promise<Record<string, WishlistItem[]>> {
   try {
