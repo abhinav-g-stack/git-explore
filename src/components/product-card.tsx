@@ -17,6 +17,7 @@ import { useAuth } from "./auth-provider";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { addToCart } from "@/lib/actions/cart-actions";
+import { WishlistButton } from "./wishlist-button";
 import { getProductImageUrl } from "@/lib/placeholder";
 
 interface ProductCardProps {
@@ -80,19 +81,22 @@ export function ProductCard({ product }: ProductCardProps) {
       </CardContent>
       <CardFooter className="p-4 flex justify-between items-center">
         <p className="text-xl font-semibold">${product.price.toFixed(2)}</p>
-        <Button
-          size="icon"
-          variant="outline"
-          onClick={handleAddToCart}
-          disabled={isLoading}
-        >
-          {isLoading ? (
-            <Loader2 className="h-5 w-5 animate-spin" />
-          ) : (
-            <ShoppingCart className="h-5 w-5" />
-          )}
-          <span className="sr-only">Add to cart</span>
-        </Button>
+        <div className="flex items-center gap-1">
+          <WishlistButton productId={product.id} productName={product.name} />
+          <Button
+            size="icon"
+            variant="outline"
+            onClick={handleAddToCart}
+            disabled={isLoading}
+          >
+            {isLoading ? (
+              <Loader2 className="h-5 w-5 animate-spin" />
+            ) : (
+              <ShoppingCart className="h-5 w-5" />
+            )}
+            <span className="sr-only">Add to cart</span>
+          </Button>
+        </div>
       </CardFooter>
     </Card>
   );

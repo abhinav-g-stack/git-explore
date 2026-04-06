@@ -4,6 +4,7 @@ import { getProduct } from "@/lib/actions/product-actions";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { AddToCartButton } from "@/components/add-to-cart-button";
+import { WishlistButton } from "@/components/wishlist-button";
 import { getProductImageUrl } from "@/lib/placeholder";
 
 export default async function ProductDetailPage({
@@ -57,10 +58,15 @@ export default async function ProductDetailPage({
             </span>
           </div>
 
-          <div className="mt-4">
+          <div className="mt-4 flex flex-wrap gap-3">
             <AddToCartButton
               productId={product.id}
               productName={product.name}
+            />
+            <WishlistButton
+              productId={product.id}
+              productName={product.name}
+              variant="full"
             />
           </div>
         </div>

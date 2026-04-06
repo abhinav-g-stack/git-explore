@@ -1,11 +1,20 @@
 "use client";
 
-import Link from 'next/link';
-import { LogIn, Menu, Moon, ShoppingCart, Sun, User as UserIcon, X } from 'lucide-react';
-import { useTheme } from '@/components/theme-provider';
-import { useAuth } from '@/components/auth-provider';
-import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import Link from "next/link";
+import {
+  Heart,
+  LogIn,
+  Menu,
+  Moon,
+  ShoppingCart,
+  Sun,
+  User as UserIcon,
+  X,
+} from "lucide-react";
+import { useTheme } from "@/components/theme-provider";
+import { useAuth } from "@/components/auth-provider";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,16 +22,16 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
-import { Logo } from './logo';
-import { categories } from '@/lib/data';
-import { useState } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
-import { CartButton } from './cart-button';
+} from "@/components/ui/dropdown-menu";
+import { Logo } from "./logo";
+import { categories } from "@/lib/data";
+import { useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
+import { CartButton } from "./cart-button";
 
 export function Header() {
   const pathname = usePathname();
-  if (pathname.startsWith('/admin')) {
+  if (pathname.startsWith("/admin")) {
     return null;
   }
 
@@ -33,13 +42,16 @@ export function Header() {
 
   const handleLogout = () => {
     logout();
-    router.push('/');
+    router.push("/");
   };
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    ...categories.map(c => ({ name: c.name, href: `/shop?category=${c.slug}` })),
-    { name: 'Shop All', href: '/shop' },
+    { name: "Home", href: "/" },
+    ...categories.map((c) => ({
+      name: c.name,
+      href: `/shop?category=${c.slug}`,
+    })),
+    { name: "Shop All", href: "/shop" },
   ];
 
   const NavItems = () => (
@@ -91,9 +103,17 @@ export function Header() {
             </nav>
           </div>
           <div className="flex items-center gap-2">
+            {user && (
+              <Button variant="ghost" size="icon" asChild>
+                <Link href="/wishlist">
+                  <Heart />
+                  <span className="sr-only">Wishlist</span>
+                </Link>
+              </Button>
+            )}
             <CartButton />
             <Button variant="ghost" size="icon" onClick={toggleTheme}>
-              {theme === 'light' ? <Moon /> : <Sun />}
+              {theme === "light" ? <Moon /> : <Sun />}
               <span className="sr-only">Toggle theme</span>
             </Button>
             {user ? (
@@ -107,12 +127,25 @@ export function Header() {
                 <DropdownMenuContent align="end">
                   <DropdownMenuLabel>My Account</DropdownMenuLabel>
                   <DropdownMenuSeparator />
-                  {user.role === 'admin' && <DropdownMenuItem onClick={() => router.push('/admin/dashboard')}>Dashboard</DropdownMenuItem>}
-                  <DropdownMenuItem onClick={() => router.push('/orders')}>My Orders</DropdownMenuItem>
+                  {user.role === "admin" && (
+                    <DropdownMenuItem
+                      onClick={() => router.push("/admin/dashboard")}
+                    >
+                      Dashboard
+                    </DropdownMenuItem>
+                  )}
+                  <DropdownMenuItem onClick={() => router.push("/orders")}>
+                    My Orders
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => router.push("/wishlist")}>
+                    My Wishlist
+                  </DropdownMenuItem>
                   <DropdownMenuItem disabled>Profile</DropdownMenuItem>
                   <DropdownMenuItem disabled>Settings</DropdownMenuItem>
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem onClick={handleLogout}>Log out</DropdownMenuItem>
+                  <DropdownMenuItem onClick={handleLogout}>
+                    Log out
+                  </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
