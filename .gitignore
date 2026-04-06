@@ -13,6 +13,11 @@ src/data/*.json
 # testing
 /coverage
 
+# playwright (baselines under tests/visual/**/__screenshots__ MUST be committed)
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
 # next.js
 /.next/
 /out/
